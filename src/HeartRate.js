@@ -5,6 +5,7 @@ import {NavigationClose} from "material-ui/svg-icons/index";
 import styled from 'styled-components';
 import {cyan600, green600, red600} from "material-ui/styles/colors";
 import {CartesianGrid, Line, LineChart, XAxis, YAxis} from "recharts";
+import {Link} from "react-router-dom";
 
 // thing is 100x40
 const ChartContainer = styled.div`
@@ -34,7 +35,7 @@ export default connect(
     <main>
         <AppBar
             title={<span>Heartrate</span>}
-            iconElementLeft={<IconButton><NavigationClose/></IconButton>}
+            iconElementLeft={<Link to="/"><IconButton><NavigationClose/></IconButton></Link>}
         />
 
         <ChartContainer>
